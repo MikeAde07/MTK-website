@@ -3,10 +3,40 @@
     padding : 0;
     box-sizing : border-box;
 }
-
+header {
+    display : flex;
+    justify-content : space-between;
+    flex-wrap : wrap;
+}
 header h1 {
     text-align : left;
     color : #39a6b2;
+    margin : 0;
+    
+}
+
+.mtk-img {
+    flex : 1 12%;
+    margin-right : 20px;
+}
+
+header nav {
+   
+    margin : 7px 0;
+}
+
+header nav ul {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : space-between;
+    align-items : center;
+    list-style : none;
+}
+
+header nav ul li a {
+    padding : 10px 15px;
+    font-weight : lighter;
+    font-size : 1.55vw;
 }
 
 body {
