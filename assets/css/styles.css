@@ -3,6 +3,7 @@
     padding : 0;
     box-sizing : border-box;
 }*/
+
 header {
     display : flex;
     justify-content : space-between;
@@ -46,32 +47,40 @@ body {
     background-color : black;
 }
 
-/*.work-project {
-    margin : 0 auto;
-    width : 100%
-    display : flex;
-    flex-wrap : wrap;
-    justify-content : space-around;
-}*/
-
-/*.project {
-    margin : 20px;
-    flex : 1;
-}*/
 
 .work {
     display : flex;
+    flex-wrap : wrap;
     justify-content : space-between;
-    max-width : 960px;
-    margin : auto;
+    max-width : 100%;
+    margin : 0 auto;
+    
 }
+
+.text {
+    text-align : center;
+    border-right : 3px solid;
+}
+
 
 .project {
     flex : 1;
     margin : 15px 8px;
     padding : 30px;
     border-radius : 6px;
+    background-color : #808080;
+
    
+}
+
+.project img {
+    border-radius : 6px;
+    border-style : 2px solid;
+}
+
+.project-bio {
+    max-width : 100%;
+    font-weight : bold;
 }
 
 .project img {
@@ -90,11 +99,12 @@ footer {
 }
 
 footer h2 {
-    
+    display : flex;
     color : #39a6b2;
     margin : 0;
-    display : flex;
     font-weight : bold;
+    padding : 0 15px;
+    
     
 }
 
@@ -115,7 +125,8 @@ footer nav ul {
 
 footer nav ul li a {
     padding : 10px 15px;
-    font-weight : lighter;
+    font-weight : bold;
     font-size : 1.55vw;
+    color : #39a6b2;
 }
 
