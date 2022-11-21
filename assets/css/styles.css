@@ -8,18 +8,24 @@ header {
     display : flex;
     justify-content : space-between;
     flex-wrap : wrap;
+    background-color : grey;
+    
+   
 }
 header h1 {
     
-    color : #39a6b2;
+    color : #396ba2;
     margin : 0;
     display : flex;
     font-weight : bold;
     
 }
 
+.name {
+    color : #396ba2;
+}
+
 header nav {
-   
     margin : 7px 0;
 }
 
@@ -33,20 +39,60 @@ header nav ul {
 
 header nav ul li a {
     padding : 10px 15px;
-    font-weight : lighter;
+    font-weight : bold;
     font-size : 1.55vw;
+    color : #39b6a2;
+}
+
+.mtk img {
+    display : flex;
+    flex-wrap : wrap;
+    border-radius : 50px;
+    max-width : 10%;
 }
 
 body {
     background-color : whitesmoke;
+    /*background-image : url("https://th.bing.com/th/id/R.f454073015d2031f6cb7af45bbe19538?rik=MStSF12XXZ08dA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fAbstract-Desktop-Matrix-HD-Wallpapers.jpg&ehk=mgwFpl%2b83TjFXeQpEuFVs7Npf4W77ysPcVGmgcG7d7s%3d&risl=&pid=ImgRaw&r=0");*/
+    
 }
 
 .subtitle {
-    text-align : right;
+    display : flex;
+    justify-content : flex-end;
+    align-items : center;
+    /*text-align : right;*/
     color : #C6D1FF;
     background-color : black;
+    background-size : 100px;
+    height : 200px;
+/*background-image : url("https://www.freewebheaders.com/wp-content/gallery/other-backgrounds/purple-lonely-chair-website-header-design.jpg");*/
 }
 
+.subtitle h3 {
+    margin : 0 30px;
+}
+
+/*.work-p {
+    background-image : url("");
+}*/
+
+.About {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : flex-end;
+    flex-wrap : wrap;
+    color : black;
+    font-weight : bold;
+    margin-right : 30px;
+}
+
+
+/*.A-text p {
+    display : flex;
+    margin : auto 110px 50px;
+    border-left : 3px solid;
+}*/
 
 .work {
     display : flex;
@@ -57,13 +103,20 @@ body {
     
 }
 
-.text {
+.section-title {
     text-align : center;
     border-right : 3px solid;
 }
 
+.work h2 {
+    text-align : center;
+    margin : auto 50px;
+}
+
 
 .project {
+    display : flex;
+    justify-content : space-between;
     flex : 1;
     margin : 15px 8px;
     padding : 30px;
@@ -75,6 +128,8 @@ body {
 }
 
 .project img {
+    display : flex;
+    max-width : 25%;
     border-radius : 6px;
     border-style : 2px solid;
 }
@@ -101,19 +156,12 @@ footer {
 
 footer h2 {
     display : flex;
-    color : #39a6b2;
+    justify-content : flex-start;
+    align-items : center;
+    color : black;
     margin : 0;
     font-weight : bold;
     padding : 0 15px;
-    
-    
-}
-
-footer h3 {
-    color : #39a6b2;
-    margin : 0;
-    display : flex;
-    font-weight : bold;
 }
 
 footer nav ul {
@@ -125,9 +173,41 @@ footer nav ul {
 }
 
 footer nav ul li a {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : flex-end;
     padding : 10px 15px;
     font-weight : bold;
     font-size : 1.55vw;
-    color : #39a6b2;
+    color : black;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom : 0;
+        justify-content : center;
+        position : relative;
+    }
+
+    header h1 {
+        width : 100%;
+        text-align : center;
+    }
+
+    header nav ul {
+        margin-top : 20px;
+        width : 100%;
+        justify-content : center;
+    
+    }
+
+    header nav ul li a {
+        font-size : 20px;
+    }
+
+    footer {
+        text-align : center;
+        width : 100%;
+    }
+}
