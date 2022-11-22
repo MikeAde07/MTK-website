@@ -85,6 +85,8 @@ body {
     color : black;
     font-weight : bold;
     margin-right : 30px;
+    
+    
 }
 
 
@@ -118,13 +120,39 @@ body {
     display : flex;
     justify-content : space-between;
     flex : 1;
-    margin : 15px 8px;
+    margin : 15px 200px;
     padding : 30px;
     border-radius : 6px;
     background-color : #808080;
     opacity : 0.8;
 
    
+}
+
+.project-twothree {
+    display : flex;
+    justify-content : space-between;
+    flex : 1;
+    max-width : 100%;
+    background-color : #808080;
+    margin : auto 200px;
+    border-radius : 6px;
+    opacity : 0.8;
+}
+
+.project-two {
+    display : flex;
+    max-width : 100%;
+    margin : 15px 8px;
+}
+
+.project-two img {
+    display : flex;
+    max-width : 25%;
+}
+.project-three {
+    display : flex;
+    max-width : 25%;
 }
 
 .project img {
